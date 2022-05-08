@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">ITWebShop</string>
+    <string name="name">Név</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="loginAsGuest">Bejelenkezés vendégként</string>
+    <string name="user_name">Felhasználónév pl: PistikeGamerKiller2009</string>
+    <string name="email_address">E-mail cím</string>
+    <string name="password_again">Jelszó megerősítése</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="address">Cím (Irányítószám, Város, Utca, Házszám)</string>
+    <string name="yes">Igen!</string>
+    <string name="nope">Nem, köszönöm!</string>
+    <string name="cancel">Mégsem</string>
+    <string name="to_cart">Kosárba</string>
+    <string name="info">Info</string>
+    <string name="detail_text">Leírás</string>
+    <string name="place_order">Rendelés leadása</string>
+
+    <string-array name="genders">
+        <item>Válassz!</item>
+        <item>Férfi</item>
+        <item>Nő</item>
+        <item>Egyéb</item>
+    </string-array>
+
+    <string-array name="shopping_item_names">
+        <item>Összerakott Gamer PC</item>
+        <item>BW-KB1 Gamer mechanikus billentyűzet</item>
+        <item>ASUS TUF Gaming F15 FX506 gamer laptop</item>
+        <item>ASUS TUF Z370-PLUS GAMING Alaplap</item>
+        <item>i9-10900k processzor</item>
+        <item>HyperX 2x8 GB RAM</item>
+        <item>HyperX Fury S (very big) egérpad</item>
+        <item>Razer Type Z gamer szék</item>
+        <item>HyperX Pulsefire FPS PRO gamer egér</item>
+        <item>Laptophűtő</item>
+    </string-array>
+
+    <string-array name="shopping_item_desc">
+        <item>i9 10900K, RTX 3050, 16GB RAM, 1TB SSD</item>
+        <item>Barna switch</item>
+        <item>i5 10300H, 15,6", 1920 × 1080, tükröződésmentes 144Hz, IPS kijelző, 8 GB RAM, DDR4, GTX 1650, 512 GB SSD</item>
+        <item>Játékhoz optimalizált Intel® LGA 1151 ATX alaplap Aura Sync RGB LED megvilágítással</item>
+        <item>Processzor - 10 magos, 20-szálas, 3,7 GHz, Boost technológiával akár 5,2 GHz</item>
+        <item>RAM memória - 2x8GB, PC4-25600, 16-18-18 CL, feszültség: 1,35 V, passzív hűtés, XMP 2,0 és Single Rank</item>
+        <item>Gamer egérpad - XL-es méret, anyaga: textil és gumi, méretei: 90×42×0,4 cm, színe: fekete</item>
+        <item>Textilbőr. Külön elhelyezhető párnával, extra kényelemért a nyaknak vagy a deréknak.</item>
+        <item>Gamer egér - vezetékes, optikai, 16000DPI, 6 gomb, rgb, 1.8 m hosszú kábel, USB, fekete</item>
+        <item>Notebook hűtőpad 17”-es méretig. 4db csendes 120mm-es ventilátora még a legintenzívebb játékok közben is megfelelő hőmérsékletre hűtenek.</item>
+    </string-array>
+
+    <array name="shopping_item_rates">
+        <item>3.8</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3.7</item>
+        <item>5</item>
+        <item>3.9</item>
+        <item>4.5</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3.5</item>
+    </array>
+
+    <array name="shopping_item_images">
+        <item>@drawable/gamer_pc</item>
+        <item>@drawable/bw_kb1</item>
+        <item>@drawable/asus_tuf_gaming_f15_fx506</item>
+        <item>@drawable/asus_tuf_z370_plus</item>
+        <item>@drawable/i9_10900k</item>
+        <item>@drawable/hyperx_2x8</item>
+        <item>@drawable/hyperx_fury_s</item>
+        <item>@drawable/razer_type_z_szek</item>
+        <item>@drawable/hyperx_pulsefire_fps</item>
+        <item>@drawable/laptophuto</item>
+    </array>
+
+    <array name="shopping_item_price">
+        <item>499990 Ft</item>
+        <item>15990 Ft</item>
+        <item>414990 Ft</item>
+        <item>50549 Ft</item>
+        <item>171490 Ft</item>
+        <item>23990 Ft</item>
+        <item>14649 Ft</item>
+        <item>60099 Ft</item>
+        <item>12390 Ft</item>
+        <item>8790 Ft</item>
+    </array>
+</resources>
