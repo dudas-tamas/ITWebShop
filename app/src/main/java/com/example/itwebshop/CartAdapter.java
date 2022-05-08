@@ -70,7 +70,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         editText.setText(String.valueOf(sum) + " Ft");
 
         Log.i(LOG_TAG,this.itemList.toString());
-        Log.i(LOG_TAG,"Alma");
     }
 
 
