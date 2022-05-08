@@ -46,7 +46,6 @@ public class ShopActivity extends AppCompatActivity {
     private int gridNumber = 1;
     private Integer itemLimit = 10;
 
-    // Member variables.
     private RecyclerView mRecyclerView;
     private ArrayList<ShoppingItem> mItemsData;
     private ShoppingAdapter mAdapter;
@@ -56,10 +55,6 @@ public class ShopActivity extends AppCompatActivity {
     private CollectionReference mCartItems;
 
     private NotificationHandler mNotificationHandler;
-    //private AlarmManager mAlarmManager;
-    //private JobScheduler mJobScheduler;
-
-    private SharedPreferences preferences;
 
     private boolean viewRow = true;
 
@@ -100,7 +95,6 @@ public class ShopActivity extends AppCompatActivity {
 
 
         mNotificationHandler = new NotificationHandler(this);
-        //mAlarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
         mNotificationHandler.send("Sikeres bejelentkezés! :)");
 
@@ -255,9 +249,8 @@ public class ShopActivity extends AppCompatActivity {
         mItems.document(item._getId()).update("cartedCount",item.getCartedCount()+1).addOnFailureListener(failure ->{
             Toast.makeText(this, "Item "+ item._getId() + "cannot be changed.", Toast.LENGTH_LONG).show();
         });
-        Log.d(LOG_TAG,"asdasdasdasd");
 
-        //mNotificationHandler.send(item.getName());
+
         queryData();
     }
 

@@ -92,15 +92,7 @@ public class ShoppingAdapter extends RecyclerView.Adapter<ShoppingAdapter.ViewHo
                                         .update(map).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void unused) {
-                                        Log.d(LOG_TAG,"örülök nagyon nagyon");
-                                        //cartItems = (cartItems + 1);
-                                        //if (0 < cartItems) {
-                                        //    textView.setText(String.valueOf(cartItems));
-                                        //} else {
-                                        //    textView.setText("");
-                                        //}
-//
-                                        //redcircle.setVisibility((cartItems > 0) ? VISIBLE : GONE);
+
                                     }
                                 });
                             }
@@ -111,7 +103,7 @@ public class ShoppingAdapter extends RecyclerView.Adapter<ShoppingAdapter.ViewHo
                                         .set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void unused) {
-                                        Log.d(LOG_TAG,"örülök nagyon nagyon");
+
                                     }
                                 });
                             }

@@ -62,7 +62,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         int sum = 0;
 
         for(int position = 0; position<cart.size(); position++){
-            //editText.setText(String.format("%.3f Ft",Double.parseDouble(editText.getText().toString().substring(0,editText.getText().toString().length()-3)) + Double.parseDouble(cart.get(position).getItemPrice().substring(0,cart.get(position).getItemPrice().length()-3))));
             String priceString = cart.get(position).getItemPrice();
             int price = Integer.parseInt(priceString.substring(0,priceString.length()-3));
             sum += price;
@@ -97,22 +96,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
 
         holder.getmTitleText().setText(cart.get(position).getItemName());
         holder.getTxtPrice().setText(cart.get(position).getItemPrice());
-        //holder.getmItemImage().setImageResource(Integer.parseInt(cart.get(position).getItemImage()));
-        //holder.btnPlus.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-//
-        //        holder.getTxtQuantity().setText((String.valueOf(Integer.parseInt(holder.getTxtQuantity().getText().toString())+1)));
-        //    }
-        //});
-
-        //holder.btnMinus.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-//
-        //        holder.getTxtQuantity().setText((String.valueOf(Integer.parseInt(holder.getTxtQuantity().getText().toString())-1 == 0 ? 1 : Integer.parseInt(holder.getTxtQuantity().getText().toString())-1 )));
-        //    }
-        //});
 
 
         holder.getBtnDelete().setOnClickListener(new View.OnClickListener() {
@@ -163,21 +146,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
                         }
 
                 });
-
-                //holder.getPlace_Order().setOnClickListener(new View.OnClickListener() {
-                //    @Override
-                //    public void onClick(View view) {
-                //        FirebaseFirestore.getInstance().collection("Cart").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                //            @Override
-                //            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                //                if(task.isSuccessful()){
-                //                    cart.clear();
-                //                }
-                //            }
-                //        });
-                //    }
-                //});
-
             }
         });
 
@@ -204,33 +172,13 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
             super(itemView);
 
             mTitleText = itemView.findViewById(R.id.txtName);
-            //btnMinus = itemView.findViewById(R.id.btnMinus);
-            //txtQuantity = itemView.findViewById(R.id.txtQuantity);
-            //btnPlus = itemView.findViewById(R.id.btnPlus);
             txtPrice = itemView.findViewById(R.id.txtPrice);
             btnDelete = itemView.findViewById(R.id.btnDelete);
-            //place_Order = (Button) itemView.findViewById(R.id.place_order);
-        }
 
-        public void setTxtQuantity(TextView txtQuantity) {
-            this.txtQuantity = txtQuantity;
         }
-
 
         public TextView getmTitleText() {
             return mTitleText;
-        }
-
-        public ImageView getBtnMinus() {
-            return btnMinus;
-        }
-
-        public TextView getTxtQuantity() {
-            return txtQuantity;
-        }
-
-        public ImageView getBtnPlus() {
-            return btnPlus;
         }
 
         public TextView getTxtPrice() {
@@ -240,12 +188,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         public ImageView getBtnDelete() {
             return btnDelete;
         }
-
-
-
-        //public Button getPlace_Order() {
-        //    return place_Order;
-        //}
     }
 
     private void queryData() {

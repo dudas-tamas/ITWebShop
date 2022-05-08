@@ -42,13 +42,10 @@ public class NotificationHandler {
     }
 
     public void send(String message){
-        //Intent intent = new Intent(mContext, ShopActivity.class);
-        //PendingIntent pendingIntent = PendingIntent.getActivity(mContext,0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext,CHANNEL_ID)
                 .setContentTitle("Shop Application")
                 .setContentText(message)
                 .setSmallIcon(R.drawable.ic_shopping_cart);
-                //.setContentIntent(pendingIntent);
 
         this.mManager.notify(NOTIFICATION_ID,builder.build());
     }

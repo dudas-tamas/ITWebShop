@@ -73,11 +73,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-        /*Animation shake =  AnimationUtils.loadAnimation(this,R.anim.shake);
-        loginButton.startAnimation(shake);*/
-
-
     }
 
     @Override
@@ -124,24 +119,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 if(task.isSuccessful()){
                     Log.d(LOG_TAG, "User loged in successfully");
                     startShopping();
-                } /*else if(task.isCanceled()) {
-                    Log.e(LOG_TAG, "User log in fail");
-                    Toast.makeText(MainActivity.this, "User log in fail: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                }*/
+                }
             });
         }catch (Exception e){
             loginButton.startAnimation(shake);
             Log.e(LOG_TAG,"Nem sikerult bejelentkezni :(((((((((((");
         }
-        /*mAuth.signInWithEmailAndPassword(eMail, password).addOnCompleteListener(this, task -> {
-            if(task.isSuccessful()){
-                Log.d(LOG_TAG, "User loged in successfully");
-                startShopping();
-            } else if(task.isCanceled()) {
-                Log.e(LOG_TAG, "User log in fail");
-                Toast.makeText(MainActivity.this, "User log in fail: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
-            }
-        });*/
 
         Log.i(LOG_TAG,"Logged in: "+ eMail + "  pw: " + password);
     }

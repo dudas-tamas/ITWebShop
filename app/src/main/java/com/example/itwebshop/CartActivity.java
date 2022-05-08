@@ -36,10 +36,6 @@ public class CartActivity extends AppCompatActivity {
     Button place_Holder;
     private List<CartModel> cart = new ArrayList<>();
 
-    ShoppingItem shoppingItem;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,8 +114,6 @@ public class CartActivity extends AppCompatActivity {
                 }
             }
         });
-
-        Log.i(LOG_TAG,"ASLDKJALSDKALKDAJSDASDJ");
     }
 
 

@@ -81,8 +81,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
         Animation shake =  AnimationUtils.loadAnimation(this,R.anim.shake);
 
-
-        String userName = userNameEditText.getText().toString();
         String email = userEmailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
         String passwordConfirm = passwordConfirmEditText.getText().toString();
@@ -95,7 +93,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         int accountTypeId = accountTypeGroup.getCheckedRadioButtonId();
         View radioButton = accountTypeGroup.findViewById(accountTypeId);
         int id = accountTypeGroup.indexOfChild(radioButton);
-        String accountType =  ((RadioButton)accountTypeGroup.getChildAt(id)).getText().toString();
 
         try {
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, task -> {
@@ -111,16 +108,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
             registerB.startAnimation(shake);
             Log.e(LOG_TAG,"Nem sikerult a regisztracio, ellenorizz le minden megadott adatot, hogy egyezznek-e");
         }
-       /* mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, task -> {
-            if(task.isSuccessful()){
-                Log.d(LOG_TAG, "User created successfully");
-                startShopping();
-            } else {
-                Log.d(LOG_TAG, "User wasn't created successfully");
-                Toast.makeText(RegisterActivity.this, "User was't created successfully: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
-            }
-        });*/
-
     }
 
     public void cancel(View view) {
@@ -134,7 +121,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String selectedItem = adapterView.getItemAtPosition(i).toString();
+
     }
 
     @Override

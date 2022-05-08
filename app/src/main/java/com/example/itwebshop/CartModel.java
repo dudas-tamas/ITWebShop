@@ -25,15 +25,4 @@ public class CartModel {
         return itemImage;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
-    }
-
-    public void setItemPrice(String itemPrice) {
-        this.itemPrice = itemPrice;
-    }
-
-    public void setItemImage(String itemImage) {
-        this.itemImage = itemImage;
-    }
 }
