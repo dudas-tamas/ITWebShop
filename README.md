@@ -1,5 +1,4 @@
 # ITWebShop
-Mobil alkfejl projekt
 
 CartActivity - Itt van megvalositva a kosar kulso nezete, a cardview-on kivuli dolgok, mint pl a rendeles leadasa es a vegosszeg
 
